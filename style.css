@@ -55,7 +55,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 18%; 
+    width: 25%; 
     padding: 8px;
     border-top: 2px solid green;
     border-bottom: 2px solid green;
@@ -157,6 +157,43 @@ a:active { text-decoration: none; }
     font-size: 20px;
     
 }
+
+.basket {
+    width: 22px;
+    height: 22px;
+    float: right;
+}
+.basket-item {
+    float: right;
+    margin-left: 30px;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.kartya1 {
+    transition-delay: 200ms;
+}
+.kartya2 {
+    transition-delay: 400ms;
+}
+
+.szoveg4 {
+    transition-delay: 0ms;
+}
+
+
 
 
 

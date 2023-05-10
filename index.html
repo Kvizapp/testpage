@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <title>Festektar.hu - Kezdőlap</title>
 </head>
 <body>
@@ -30,10 +31,13 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Bemutatkozás</a>
               </li><li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Webshop</a>
+                <a class="nav-link active" aria-current="page" href="webshop.html">Webshop</a>
               </li><li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Kapcsolat</a>
               </li>
+            </li><li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><img class="basket" src="https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-1/24/bx-basket-1024.png" alt=""></a>
+            </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Search">
@@ -73,14 +77,14 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p class="text-danger firstp">FESTÉKTÁR KFT. AZ ÖN IGÉNYEIRE SZABVA!</p>
-                <p class="text-success secondp"> SZAKKÉPZETT KOLLÉGÁINKNAK BÁTRAN FELTEHET BÁRMILYEN KÉRDÉST, AKÁR A SZÍNVÁLASZTÁST, AKÁR A RÉTEGEKET ÉS EGYÉB TANÁCSADÁST NÉZVE.</p>
-                <p>Ha megunta a hatalmas polcok közötti barangolást, a hozzá nem értő emberek “jó” tanácsait, vagy csak egyszerűen emberibb körülmények között szeretné megszerezni azokat a termékeket, amik otthona szépítéséhez szükségesek, térjen be hozzánk, segítünk!</p>
+                <p class="text-danger firstp hidden szoveg">FESTÉKTÁR KFT. AZ ÖN IGÉNYEIRE SZABVA!</p>
+                <p class="text-success secondp hidden szoveg2"> SZAKKÉPZETT KOLLÉGÁINKNAK BÁTRAN FELTEHET BÁRMILYEN KÉRDÉST, AKÁR A SZÍNVÁLASZTÁST, AKÁR A RÉTEGEKET ÉS EGYÉB TANÁCSADÁST NÉZVE.</p>
+                <p class="hidden szoveg3">Ha megunta a hatalmas polcok közötti barangolást, a hozzá nem értő emberek “jó” tanácsait, vagy csak egyszerűen emberibb körülmények között szeretné megszerezni azokat a termékeket, amik otthona szépítéséhez szükségesek, térjen be hozzánk, segítünk!</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <button class="gomb">Üzleteink</button>
+                <a href="uzleteink.html"><button class="gomb hidden szoveg4">Üzleteink</button></a>
             </div>
         </div>
       </div>
@@ -93,7 +97,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 zoom">
-            <div class="card" >
+            <div class="card hidden " >
               <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Webshop</h5>
@@ -103,7 +107,7 @@
             </div>
           </div>
           <div class="col-lg-4 zoom">
-            <div class="card" >
+            <div class="card hidden kartya1" >
               <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Színkeverés</h5>
@@ -113,7 +117,7 @@
             </div>
           </div>
           <div class="col-lg-4 zoom">
-            <div class="card" >
+            <div class="card hidden kartya2" >
               <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Poli-Farbe festékek</h5>
@@ -151,28 +155,7 @@
             </div>
       
             <div class="col-lg-4 col-md-12 offset-1">
-              <form class="row g-3" action="https://formsubmit.co/76c58b5f3eb065d0e44f9408ce600910" method="POST">
-         
-                <input type="text" name="_honey" style="display: none;">
-      
-                
-                <input type="hidden" name="_captcha" value="false">
-      
-                
-      
-                
-               
-               
-                <h5>Iratkozzon fel a hírlevelünkre!</h5>
-               
-                <label for="emailInfo" class="form-label font email-cim">E-mail</label> 
-                <div class="d-flex w-100 gap-2">
-                  
-                  <input type="email" class="form-control box" name="email" id="emailInfo" required>
-                  <button class="btn btn-primary" type="button">Feliratkozás</button>
-                </div>
-                <input type="hidden" name="_next" value="Köszönjük, hogy feliratkozott a hírlevelünkre." >
-              </form>
+              
             </div>
           </div>
       
