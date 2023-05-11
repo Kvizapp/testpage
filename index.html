@@ -17,31 +17,29 @@
     <img src="https://festektar.hu/wp-content/uploads/2020/10/festektarlogo.png" alt="" class="logo"></div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler toggler-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""><img class="navbar-kep" src="https://cdn1.iconfinder.com/data/icons/iconoir-vol-3/24/menu-1024.png" alt=""></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-danger" aria-current="page" href="#">Kezdőlap</a>
+                <a class="nav-link active fo-btn " aria-current="page" href="#">Kezdőlap</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Bemutatkozás</a>
+                <a class="nav-link active alt-btn" aria-current="page" href="#">Bemutatkozás</a>
               </li><li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="webshop.html">Webshop</a>
+                <a class="nav-link active alt-btn" aria-current="page" href="webshop.html">Webshop</a>
               </li><li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Kapcsolat</a>
+                <a class="nav-link active alt-btn" aria-current="page" href="#">Kapcsolat</a>
               </li>
-            </li><li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><img class="basket" src="https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-1/24/bx-basket-1024.png" alt=""></a>
-            </li>
+            
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Keresés</button>
+              <input class="form-control me-2 search-form" type="search" placeholder="Keresés" aria-label="Search">
+              <button class="btn search-btn" type="submit">Keresés</button>
             </form>
           </div>
         </div>
@@ -77,8 +75,8 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p class="text-danger firstp hidden szoveg">FESTÉKTÁR KFT. AZ ÖN IGÉNYEIRE SZABVA!</p>
-                <p class="text-success secondp hidden szoveg2"> SZAKKÉPZETT KOLLÉGÁINKNAK BÁTRAN FELTEHET BÁRMILYEN KÉRDÉST, AKÁR A SZÍNVÁLASZTÁST, AKÁR A RÉTEGEKET ÉS EGYÉB TANÁCSADÁST NÉZVE.</p>
+                <p class=" firstp hidden szoveg">FESTÉKTÁR KFT. AZ ÖN IGÉNYEIRE SZABVA!</p>
+                <p class=" secondp hidden szoveg2"> SZAKKÉPZETT KOLLÉGÁINKNAK BÁTRAN FELTEHET BÁRMILYEN KÉRDÉST, AKÁR A SZÍNVÁLASZTÁST, AKÁR A RÉTEGEKET ÉS EGYÉB TANÁCSADÁST NÉZVE.</p>
                 <p class="hidden szoveg3">Ha megunta a hatalmas polcok közötti barangolást, a hozzá nem értő emberek “jó” tanácsait, vagy csak egyszerűen emberibb körülmények között szeretné megszerezni azokat a termékeket, amik otthona szépítéséhez szükségesek, térjen be hozzánk, segítünk!</p>
             </div>
         </div>
@@ -89,7 +87,7 @@
         </div>
       </div>
       <div class="section-line ">
-        <span class="section-title text-success">
+        <span class="section-title ">
           Szolgáltatásaink
         </span>
       </div>
@@ -102,7 +100,7 @@
               <div class="card-body">
                 <h5 class="card-title">Webshop</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Érdekel</a>
+                <a href="#" class="btn btn-text">Érdekel</a>
               </div>
             </div>
           </div>
@@ -112,7 +110,7 @@
               <div class="card-body">
                 <h5 class="card-title">Színkeverés</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Érdekel</a>
+                <a href="#" class="btn btn-text">Érdekel</a>
               </div>
             </div>
           </div>
@@ -122,7 +120,7 @@
               <div class="card-body">
                 <h5 class="card-title">Poli-Farbe festékek</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Érdekel</a>
+                <a href="#" class="btn btn-text">Érdekel</a>
               </div>
             </div>
           </div>
@@ -154,20 +152,29 @@
               </ul>
             </div>
       
-            <div class="col-lg-4 col-md-12 offset-1">
-              
+            <div class="col-lg-4 col-md-12 offset-lg-1">
+              <form>
+                <h5 class="footer-infos">Íratkozz fel a hírlevelünkre</h5>
+                <p class="text-sub">Minél hamarabb értesülj az újdonságokról</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="E-mail cím">
+                  <button class="btn btn-text" type="button">Feliratkozás</button>
+                </div>
+              </form>
             </div>
           </div>
-      
-          <div class="d-flex justify-content-between py-4 my-4 border-top">
+         
+          <div class="d-flex justify-content-between py-4 my-4 copyright-tag">
             <p>&copy; 2023 Festéktár KFT. Minden jog fenttartva.</p>
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+              <li class="ms-3 "><a class="link-dark " href="#"><img class="social" width="24" height="24" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-512.png" alt=""></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><img class="social " width="24" height="24" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-1024.png" alt=""></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><img class="right-social-icon social" width="24" height="24" src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-512.png" alt=""></a></li>
             </ul>
-          </div>
-          <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/to-up-1024.png" alt="" class="backtotop"></button>
+           
+          </div >
+          <button class="d-none d-sm-block" onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/to-up-1024.png" alt="" class="backtotop d-none d-sm-block"></button>
           <script>
            
             let mybutton = document.getElementById("myBtn");
