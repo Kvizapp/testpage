@@ -29,6 +29,7 @@ body {
     .logo {
         float: right;
         width: 30%;
+        margin-bottom: 15px;
     }
     .zoom {
         padding: none;
@@ -345,7 +346,7 @@ h5 {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-        width: 35%; 
+        width: 34%; 
         padding: 8px;
         border-top: 2px solid #0ef6cc;
         border-bottom: 2px solid #0ef6cc;
@@ -359,10 +360,22 @@ h5 {
     }
     
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 900px) {
     .social {
         margin-bottom: 120px;
     }
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        font-size: 17px;
+    }
+}
+.thanks-mg {
+    color: #0ef6cc;
+    margin-top: 10px;
+    display: block;
 }
 
 

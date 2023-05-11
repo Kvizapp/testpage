@@ -148,15 +148,26 @@
             </div>
       
             <div class="col-lg-4 col-md-12 offset-lg-1">
-              <form>
+              
                 <h5 class="footer-infos">Íratkozz fel a hírlevelünkre</h5>
                 <p class="text-sub">Minél hamarabb értesülj az újdonságokról</p>
-                <div class="d-flex w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="E-mail cím">
-                  <button class="btn btn-text" type="button">Feliratkozás</button>
-                </div>
-              </form>
+                <form class="row g-3" action="https://formsubmit.co/d31ef6a7ab95aa4876ad44714bb39177" method="POST">
+         
+                  <input type="text" name="_honey" style="display: none;">
+        
+                  
+                  <input type="hidden" name="_captcha" value="false">
+        
+                  <input type="hidden" name="_next" value="https://kvizapp.github.io/sumbitdemocheck/success.html" >
+        
+                 
+                  <div class="d-flex w-100 gap-4">
+                    
+                    <input type="email" class="form-control box" name="email" id="emailInfo" placeholder="Email cím" required>
+                    <button type="submit" class="btn btn-text">Elküldés</button>
+                  </div>
+                </form>
+             
             </div>
           </div>
          
@@ -190,5 +201,6 @@
               document.documentElement.scrollTop = 0;
             }
             </script>
+            
 </body>
 </html>
